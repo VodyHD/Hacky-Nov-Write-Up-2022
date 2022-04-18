@@ -1,0 +1,10 @@
+#docker-compose.yml
+version: '3.3'
+
+services:
+  zipette:
+    image: registry.hackynov.fr/chall_zipette
+    container_name: container_chall_zipette
+    restart: always
+    ports:
+      - "7777:80"
